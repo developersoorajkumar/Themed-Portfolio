@@ -1,53 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sooraj Kumar — Customer Support & Web Development Professional based in Lahore, Pakistan.">
-  <title>Sooraj Kumar | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sooraj Kumar — Customer Support & Web Development Professional based in Lahore, Pakistan."
+    />
+    <title>Sooraj Kumar | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#home" class="nav__logo" aria-label="Sooraj Kumar — Home">
+          <span class="nav__logo-box">SK</span>
+        </a>
 
-  <!-- Navigation -->
-  <header class="header" id="header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a href="#home" class="nav__logo" aria-label="Sooraj Kumar — Home">
-        <span class="nav__logo-box">SK</span>
-      </a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="./index.html" class="nav__link">Home</a></li>
+          <li><a href="./about.html" class="nav__link">About</a></li>
+          <li><a href="./skills.html" class="nav__link">Skills</a></li>
+          <li><a href="./contact.html" class="nav__link">Contact</a></li>
+        </ul>
 
-      <ul class="nav__menu" id="nav-menu">
-        <li><a href="./index.html" class="nav__link">Home</a></li>
-        <li><a href="./about.html" class="nav__link">About</a></li>
-        <li><a href="./skills.html" class="nav__link">Skills</a></li>
-        <li><a href="./contact.html" class="nav__link">Contact</a></li>
-      </ul>
+        <div class="nav__actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-toggle__icon theme-toggle__icon--sun">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg>
+            </span>
+            <span class="theme-toggle__icon theme-toggle__icon--moon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="nav__toggle"
+            id="nav-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-      <div class="nav__actions">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-          <span class="theme-toggle__icon theme-toggle__icon--sun">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          </span>
-          <span class="theme-toggle__icon theme-toggle__icon--moon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </span>
-        </button>
-        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span class="nav__toggle-bar"></span>
-          <span class="nav__toggle-bar"></span>
-          <span class="nav__toggle-bar"></span>
-        </button>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- Hero -->
-    <!-- <section class="hero section" id="home" aria-label="Introduction">
+    <main>
+      <!-- Hero -->
+      <!-- <section class="hero section" id="home" aria-label="Introduction">
       <div class="hero__bg" aria-hidden="true">
         <span class="hero__shape hero__shape--1"></span>
         <span class="hero__shape hero__shape--2"></span>
@@ -76,242 +119,496 @@
       </div>
     </section> -->
 
-
-    <!-- About -->
-    <section class="section section--alt" id="about" aria-labelledby="about-heading">
-      <div class="container fade-in">
-        <h2 class="section__heading" id="about-heading">About Me</h2>
-        <div class="about">
-          <div class="about__avatar" aria-hidden="true">
-            <span class="about__initials">SK</span>
-          </div>
-          <div class="about__content">
-            <p class="about__text">
-              Skilled and self-motivated professional with hands-on experience in web development, graphic design, and AI-driven research. Completed BPO and call centre sales training with exposure to outbound and inbound calls, lead follow-up, CRM tools, email and live chat support, and documentation. Brings strong written English, active listening, problem-solving, and multilingual communication to every customer interaction.
-            </p>
-            <div class="about__badges">
-              <span class="badge">Hyderabad, Pakistan</span>
-              <span class="badge">BS Philosophy & Psychology — Punjab University, Lahore</span>
-              <span class="badge">Multilingual: 6 Languages</span>
+      <!-- About -->
+      <section
+        class="section section--alt"
+        id="about"
+        aria-labelledby="about-heading"
+      >
+        <div class="container fade-in">
+          <h2 class="section__heading" id="about-heading">About Me</h2>
+          <div class="about">
+            <div class="about__avatar" aria-hidden="true">
+              <span class="about__initials">SK</span>
+            </div>
+            <div class="about__content">
+              <p class="about__text">
+                Skilled and self-motivated professional with hands-on experience
+                in web development, graphic design, and AI-driven research.
+                Completed BPO and call centre sales training with exposure to
+                outbound and inbound calls, lead follow-up, CRM tools, email and
+                live chat support, and documentation. Brings strong written
+                English, active listening, problem-solving, and multilingual
+                communication to every customer interaction.
+              </p>
+              <div class="about__badges">
+                <span class="badge">Hyderabad, Pakistan</span>
+                <span class="badge"
+                  >BS Philosophy & Psychology — Punjab University, Lahore</span
+                >
+                <span class="badge">Multilingual: 6 Languages</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-<section id="journey" class="journey">
-      <div class="container">
-        <h2 class="section__heading">My Learning Journey</h2>
-        <p class="journey__subtitle">From Graphic Design to Full Stack Development</p>
+      </section>
+      <section id="journey" class="journey">
+        <div class="container">
+          <h2 class="section__heading">My Learning Journey</h2>
+          <p class="journey__subtitle">
+            From Graphic Design to Full Stack Development
+          </p>
 
-        <div class="journey-track">
-          <div class="journey-node">
-            <div class="journey-node__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 0-7 7c0 5.25 7 11 7 11s7-5.75 7-11a7 7 0 0 0-7-7Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div class="journey-track">
+            <div class="journey-node">
+              <div class="journey-node__icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 3a7 7 0 0 0-7 7c0 5.25 7 11 7 11s7-5.75 7-11a7 7 0 0 0-7-7Z"
+                  />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+              </div>
+              <div class="journey-node__content">
+                <div class="journey-node__year">2022</div>
+                <h3 class="journey-node__title">Graphic Design</h3>
+                <p class="journey-node__desc">
+                  Photoshop, Illustrator, Canva, CorelDraw
+                </p>
+                <span class="journey-node__issuer">TEA Certified</span>
+              </div>
             </div>
-            <div class="journey-node__content">
-              <div class="journey-node__year">2022</div>
-              <h3 class="journey-node__title">Graphic Design</h3>
-              <p class="journey-node__desc">Photoshop, Illustrator, Canva, CorelDraw</p>
-              <span class="journey-node__issuer">TEA Certified</span>
-            </div>
-          </div>
 
-          <div class="journey-node">
-            <div class="journey-node__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <div class="journey-node">
+              <div class="journey-node__icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <div class="journey-node__content">
+                <div class="journey-node__year">2023</div>
+                <h3 class="journey-node__title">Front-End Development</h3>
+                <p class="journey-node__desc">
+                  HTML5, CSS3, Bootstrap 5, JavaScript
+                </p>
+                <span class="journey-node__issuer">MTVTI Certified</span>
+              </div>
             </div>
-            <div class="journey-node__content">
-              <div class="journey-node__year">2023</div>
-              <h3 class="journey-node__title">Front-End Development</h3>
-              <p class="journey-node__desc">HTML5, CSS3, Bootstrap 5, JavaScript</p>
-              <span class="journey-node__issuer">MTVTI Certified</span>
-            </div>
-          </div>
 
-          <div class="journey-node">
-            <div class="journey-node__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10"/></svg>
+            <div class="journey-node">
+              <div class="journey-node__icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10"
+                  />
+                </svg>
+              </div>
+              <div class="journey-node__content">
+                <div class="journey-node__year">2023</div>
+                <h3 class="journey-node__title">Web Development</h3>
+                <p class="journey-node__desc">
+                  Full web builds + 1-Year IT Diploma
+                </p>
+                <span class="journey-node__issuer">iHunar / STEVTA</span>
+              </div>
             </div>
-            <div class="journey-node__content">
-              <div class="journey-node__year">2023</div>
-              <h3 class="journey-node__title">Web Development</h3>
-              <p class="journey-node__desc">Full web builds + 1-Year IT Diploma</p>
-              <span class="journey-node__issuer">iHunar / STEVTA</span>
-            </div>
-          </div>
 
-          <div class="journey-node">
-            <div class="journey-node__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12"/><path d="M6 20h12"/><path d="M8 4v16"/><path d="M16 4v16"/><path d="M4 8h16"/><path d="M4 16h16"/></svg>
+            <div class="journey-node">
+              <div class="journey-node__icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 4h12" />
+                  <path d="M6 20h12" />
+                  <path d="M8 4v16" />
+                  <path d="M16 4v16" />
+                  <path d="M4 8h16" />
+                  <path d="M4 16h16" />
+                </svg>
+              </div>
+              <div class="journey-node__content">
+                <div class="journey-node__year">2024</div>
+                <h3 class="journey-node__title">WordPress Development</h3>
+                <p class="journey-node__desc">
+                  WooCommerce, Dokan, WCFM, Amelia, GloriaFood, Tutor LMS
+                </p>
+                <span class="journey-node__issuer">iHunar Certified</span>
+              </div>
             </div>
-            <div class="journey-node__content">
-              <div class="journey-node__year">2024</div>
-              <h3 class="journey-node__title">WordPress Development</h3>
-              <p class="journey-node__desc">WooCommerce, Dokan, WCFM, Amelia, GloriaFood, Tutor LMS</p>
-              <span class="journey-node__issuer">iHunar Certified</span>
-            </div>
-          </div>
 
-          <div class="journey-node journey-node--current">
-            <div class="journey-node__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.5A2.5 2.5 0 0 1 6.5 12H18"/><path d="M4 9.5A2.5 2.5 0 0 0 6.5 12H18"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H18"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H18"/><path d="M19 7l2 2-2 2"/><path d="M19 15l2 2-2 2"/></svg>
-            </div>
-            <div class="journey-node__content">
-              <div class="journey-node__year">2026</div>
-              <h3 class="journey-node__title">Full Stack Development</h3>
-              <p class="journey-node__desc">Frontend → Backend, full roadmap in progress</p>
-              <span class="journey-node__badge">Loading...</span>
+            <div class="journey-node journey-node--current">
+              <div class="journey-node__icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 14.5A2.5 2.5 0 0 1 6.5 12H18" />
+                  <path d="M4 9.5A2.5 2.5 0 0 0 6.5 12H18" />
+                  <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H18" />
+                  <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H18" />
+                  <path d="M19 7l2 2-2 2" />
+                  <path d="M19 15l2 2-2 2" />
+                </svg>
+              </div>
+              <div class="journey-node__content">
+                <div class="journey-node__year">2026</div>
+                <h3 class="journey-node__title">Full Stack Development</h3>
+                <p class="journey-node__desc">
+                  Frontend → Backend, full roadmap in progress
+                </p>
+                <span class="journey-node__badge">Loading...</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       <!-- Languages -->
-    <section class="section section--alt" id="languages" aria-labelledby="languages-heading">
-      <div class="container fade-in">
-        <h2 class="section__heading" id="languages-heading">Languages</h2>
-        <div class="languages-grid">
-          <article class="language-card">
-            <div class="lang-ring-wrapper">
-              <svg class="lang-ring" viewBox="0 0 120 120">
-                <circle class="lang-ring__bg" cx="60" cy="60" r="45"/>
-                <circle class="lang-ring__fill" cx="60" cy="60" r="45" data-percent="60"/>
-              </svg>
-              <span class="lang-ring__percent">60%</span>
-            </div>
-            <h3 class="language-card__name">English</h3>
-            <p class="language-card__level">Intermediate</p>
-          </article>
+      <section
+        class="section section--alt"
+        id="languages"
+        aria-labelledby="languages-heading"
+      >
+        <div class="container fade-in">
+          <h2 class="section__heading" id="languages-heading">Languages</h2>
+          <div class="languages-grid">
+            <article class="language-card">
+              <div class="lang-ring-wrapper">
+                <svg class="lang-ring" viewBox="0 0 120 120">
+                  <circle class="lang-ring__bg" cx="60" cy="60" r="45" />
+                  <circle
+                    class="lang-ring__fill"
+                    cx="60"
+                    cy="60"
+                    r="45"
+                    data-percent="60"
+                  />
+                </svg>
+                <span class="lang-ring__percent">60%</span>
+              </div>
+              <h3 class="language-card__name">English</h3>
+              <p class="language-card__level">Intermediate</p>
+            </article>
 
-          <article class="language-card">
-            <div class="lang-ring-wrapper">
-              <svg class="lang-ring" viewBox="0 0 120 120">
-                <circle class="lang-ring__bg" cx="60" cy="60" r="45"/>
-                <circle class="lang-ring__fill" cx="60" cy="60" r="45" data-percent="90"/>
-              </svg>
-              <span class="lang-ring__percent">90%</span>
-            </div>
-            <h3 class="language-card__name">Urdu</h3>
-            <p class="language-card__level">Fluent</p>
-          </article>
+            <article class="language-card">
+              <div class="lang-ring-wrapper">
+                <svg class="lang-ring" viewBox="0 0 120 120">
+                  <circle class="lang-ring__bg" cx="60" cy="60" r="45" />
+                  <circle
+                    class="lang-ring__fill"
+                    cx="60"
+                    cy="60"
+                    r="45"
+                    data-percent="90"
+                  />
+                </svg>
+                <span class="lang-ring__percent">90%</span>
+              </div>
+              <h3 class="language-card__name">Urdu</h3>
+              <p class="language-card__level">Fluent</p>
+            </article>
 
-          <article class="language-card">
-            <div class="lang-ring-wrapper">
-              <svg class="lang-ring" viewBox="0 0 120 120">
-                <circle class="lang-ring__bg" cx="60" cy="60" r="45"/>
-                <circle class="lang-ring__fill" cx="60" cy="60" r="45" data-percent="25"/>
-              </svg>
-              <span class="lang-ring__percent">25%</span>
-            </div>
-            <h3 class="language-card__name">Punjabi</h3>
-            <p class="language-card__level">Basic</p>
-          </article>
+            <article class="language-card">
+              <div class="lang-ring-wrapper">
+                <svg class="lang-ring" viewBox="0 0 120 120">
+                  <circle class="lang-ring__bg" cx="60" cy="60" r="45" />
+                  <circle
+                    class="lang-ring__fill"
+                    cx="60"
+                    cy="60"
+                    r="45"
+                    data-percent="25"
+                  />
+                </svg>
+                <span class="lang-ring__percent">25%</span>
+              </div>
+              <h3 class="language-card__name">Punjabi</h3>
+              <p class="language-card__level">Basic</p>
+            </article>
 
-          <article class="language-card">
-            <div class="lang-ring-wrapper">
-              <svg class="lang-ring" viewBox="0 0 120 120">
-                <circle class="lang-ring__bg" cx="60" cy="60" r="45"/>
-                <circle class="lang-ring__fill" cx="60" cy="60" r="45" data-percent="60"/>
-              </svg>
-              <span class="lang-ring__percent">60%</span>
-            </div>
-            <h3 class="language-card__name">Hindi</h3>
-            <p class="language-card__level">Intermediate</p>
-          </article>
+            <article class="language-card">
+              <div class="lang-ring-wrapper">
+                <svg class="lang-ring" viewBox="0 0 120 120">
+                  <circle class="lang-ring__bg" cx="60" cy="60" r="45" />
+                  <circle
+                    class="lang-ring__fill"
+                    cx="60"
+                    cy="60"
+                    r="45"
+                    data-percent="60"
+                  />
+                </svg>
+                <span class="lang-ring__percent">60%</span>
+              </div>
+              <h3 class="language-card__name">Hindi</h3>
+              <p class="language-card__level">Intermediate</p>
+            </article>
 
-          <article class="language-card">
-            <div class="lang-ring-wrapper">
-              <svg class="lang-ring" viewBox="0 0 120 120">
-                <circle class="lang-ring__bg" cx="60" cy="60" r="45"/>
-                <circle class="lang-ring__fill" cx="60" cy="60" r="45" data-percent="100"/>
-              </svg>
-              <span class="lang-ring__percent">100%</span>
-            </div>
-            <h3 class="language-card__name">Sindhi</h3>
-            <p class="language-card__level">Native</p>
-          </article>
+            <article class="language-card">
+              <div class="lang-ring-wrapper">
+                <svg class="lang-ring" viewBox="0 0 120 120">
+                  <circle class="lang-ring__bg" cx="60" cy="60" r="45" />
+                  <circle
+                    class="lang-ring__fill"
+                    cx="60"
+                    cy="60"
+                    r="45"
+                    data-percent="100"
+                  />
+                </svg>
+                <span class="lang-ring__percent">100%</span>
+              </div>
+              <h3 class="language-card__name">Sindhi</h3>
+              <p class="language-card__level">Native</p>
+            </article>
 
-          <article class="language-card">
-            <div class="lang-ring-wrapper">
-              <svg class="lang-ring" viewBox="0 0 120 120">
-                <circle class="lang-ring__bg" cx="60" cy="60" r="45"/>
-                <circle class="lang-ring__fill" cx="60" cy="60" r="45" data-percent="100"/>
-              </svg>
-              <span class="lang-ring__percent">100%</span>
-            </div>
-            <h3 class="language-card__name">Dhatki</h3>
-            <p class="language-card__level">Mother Tongue</p>
-          </article>
+            <article class="language-card">
+              <div class="lang-ring-wrapper">
+                <svg class="lang-ring" viewBox="0 0 120 120">
+                  <circle class="lang-ring__bg" cx="60" cy="60" r="45" />
+                  <circle
+                    class="lang-ring__fill"
+                    cx="60"
+                    cy="60"
+                    r="45"
+                    data-percent="100"
+                  />
+                </svg>
+                <span class="lang-ring__percent">100%</span>
+              </div>
+              <h3 class="language-card__name">Dhatki</h3>
+              <p class="language-card__level">Mother Tongue</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section
+        class="section"
+        id="education"
+        aria-labelledby="education-heading"
+      >
+        <div class="container fade-in">
+          <h2 class="section__heading" id="education-heading">Education</h2>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__content">
+                <h3 class="timeline__school">
+                  University of the Punjab, Lahore
+                </h3>
+                <p class="timeline__degree">
+                  BS Philosophy & Psychology — 2025 to 2029
+                </p>
+                <p class="timeline__grade">CGPA: 3.5+</p>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__content">
+                <h3 class="timeline__school">
+                  Govt Boys Degree College, Mithi
+                </h3>
+                <p class="timeline__degree">
+                  Intermediate — Pre-Engineering — 2022 to 2024
+                </p>
+                <p class="timeline__grade">Grade: A</p>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__content">
+                <h3 class="timeline__school">Govt Boys High School, Mithi</h3>
+                <p class="timeline__degree">
+                  Matriculation — General Science — 2017 to 2022
+                </p>
+                <p class="timeline__grade">Grade: A1</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">
+          &copy; Designed &amp; Built by Sooraj Kumar — 2026
+        </p>
+        <div class="footer__social">
+          <a
+            href="mailto:websoorajkumar@gmail.com"
+            class="footer__link"
+            aria-label="Email Sooraj Kumar"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/soorajkumar-pk"
+            class="footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a
+            href="tel:+923289251562"
+            class="footer__link"
+            aria-label="Call Sooraj Kumar"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/developersoorajkumar"
+            class="footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 19c-4.3 1.4-4.3-2.5-6-3" />
+              <path
+                d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://codepen.io/developersoorajkumar"
+            class="footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CodePen profile"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2 2 7l10 5 10-5-10-5Z" />
+              <path d="m2 17 10 5 10-5" />
+              <path d="m2 12 10 5 10-5" />
+              <path d="M2 7v10" />
+              <path d="M22 7v10" />
+            </svg>
+          </a>
         </div>
       </div>
-    </section>
+    </footer>
 
-    
-    <!-- Education -->
-    <section class="section" id="education" aria-labelledby="education-heading">
-      <div class="container fade-in">
-        <h2 class="section__heading" id="education-heading">Education</h2>
-        <ol class="timeline">
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
 
-          <li class="timeline__item">
-            <div class="timeline__content">
-              <h3 class="timeline__school">University of the Punjab, Lahore</h3>
-              <p class="timeline__degree">BS Philosophy & Psychology — 2025 to 2029</p>
-              <p class="timeline__grade">CGPA: 3.5+</p>
-            </div>
-          </li>
-
-          <li class="timeline__item">
-            <div class="timeline__content">
-              <h3 class="timeline__school">Govt Boys Degree College, Mithi</h3>
-              <p class="timeline__degree">Intermediate — Pre-Engineering — 2022 to 2024</p>
-              <p class="timeline__grade">Grade: A</p>
-            </div>
-          </li>
-
-          <li class="timeline__item">
-            <div class="timeline__content">
-              <h3 class="timeline__school">Govt Boys High School, Mithi</h3>
-              <p class="timeline__degree">Matriculation — General Science — 2017 to 2022</p>
-              <p class="timeline__grade">Grade: A1</p>
-            </div>
-          </li>
-
-        </ol>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p class="footer__text">&copy; Designed &amp; Built by Sooraj Kumar — 2026</p>
-      <div class="footer__social">
-        <a href="mailto:websoorajkumar@gmail.com" class="footer__link" aria-label="Email Sooraj Kumar">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        </a>
-        <a href="https://linkedin.com/in/soorajkumar-pk" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-        <a href="tel:+923289251562" class="footer__link" aria-label="Call Sooraj Kumar">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        </a>
-        <a href="https://github.com/developersoorajkumar" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3"/><path d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        </a>
-        <a href="https://codepen.io/developersoorajkumar" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="CodePen profile">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/><path d="M2 7v10"/><path d="M22 7v10"/></svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
-
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
